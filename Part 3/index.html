@@ -27,15 +27,39 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
 */
 
 // CREA TU FUNCION challenge1 aqui:
+function challenge1(){
+    var numBotones = prompt("Cuantos botones necesitas?");
+    for(var i = 0; i < numBotones; i++){
+        var dum = document.getElementById("dummy")
+        var btn = document.createElement("button");
+        btn.innerHTML = nombres[i];
+        dum.appendChild(btn);
+    }
 
-
+}
 
 /*
 Crea una funcion llamada: challenge2 que utilizando un FOR convierta todos los nombres a mayusula y los escriba en la consola
 */
 
 // CREA TU FUNCION challenge2 2 aquí.
+function challenge2(){
+    
+    for(var i = 0; i < nombres.length; i++){
+        console.log(nombres[i].toUpperCase())
+    }
+}
 
+//A
+function Dog(Nombre, Color, Raza){
+    this.Nombre = Nombre;
+    this.Color = Color;
+    this.Raza = Raza;
+}
+//B
+var firulais = new Dog("firulais","Cafe","Golden Retriever");
+    var doggo = new Dog("Spot", "Blanco", "Pastor Aleman");
+    var wolf = new Dog("Wolf", "Blanco", "Husky");
 
 
 /*
@@ -68,6 +92,16 @@ Deberia escribir en consola
 */
 
 // CREA TU FUNCION printInfo() AQUI
+function challenge3(){
+    printInfo(firulais);
+    printInfo(wolf);
+    printInfo(doggo);
+}
+
+function printInfo(Dog){
+    console.log("Nombre: " + Dog.Nombre + " , De color: " + Dog.Color + " , Raza: " + Dog.Raza);
+
+}
 
 
 

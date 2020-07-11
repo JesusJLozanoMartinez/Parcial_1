@@ -1,42 +1,67 @@
 header {
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 
 }
 
 
 h2 {
-
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  width: 32%;
 }
 
 .nav {
-
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
 
   }
 
   li {
-
+    display: flex;
+    justify-content: space-evenly;
+    border-style: solid;
+    width: 18%;
 
   }
 
   .content{
+    display: flex;
+    border-style: solid;
 
 }
 
   .aside {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    width: 33%;
 
   }
 
   .slidebox{
+    display: flex;
+    border-style: solid;
+    justify-content: center;
 
    
   }
 
   .article{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    width: 70%;
 
   }
 
 
 .poem{
+  display: flex;
+  border-style: solid;
 
 }
 
@@ -45,29 +70,31 @@ h2 {
   Screen = B/w 600px to 990px*/
   @media (min-width:600px) and (max-width: 990px)  {
     .article {
-
+      flex-direction: column;
   } 
-header{
-
-}
+  header{
+    display: none;
+  }
 }
 
 /*  Small devices    */
 @media (max-width:599px) {
 
-header,.content{
+  header,.content{
+    display: none;
+  }
 
-}
-
-.nav {
-
+  .nav {
+    flex-direction: column;
+    justify-content: center;
 
   }
 
 
-.nav > li {
-
-}
+  .nav > li {
+    width: 100%;
+    margin-top: 60px;
+  }
 
 
 }
